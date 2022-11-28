@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Toggle</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		.slider{
+			width: 100%;
+			height: 100px;
+			border:1px solid black;
+			background: blue;
+			font-size: 30px;
+			color: white;
+			text-align: center;
+		}
+		.slide{
+			width: 100%;
+			height: 200px;
+			border:1px solid black;
+			background: lime;
+			display: none;
+		}
+		
+	</style>
+</head>
+<body>
+
+<div class="slider">This is Slider<br>
+			
+			<button id="btn">Slide Down</button>
+			<button id="btn2">Slide Toggle</button>
+			<button id="btn1">Slide Up</button>
+			<div class="slide">This is slide</div>
+		</div>
+</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$(".slide").slideDown(2000);
+			});
+			$("#btn1").click(function(){
+				$(".slide").slideUp(2000)
+			});
+			$("#btn2").click(function(){
+				$(".slide").slideToggle(2000)
+			});
+		});
+	</script>
+
+</html>
