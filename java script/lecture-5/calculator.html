@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+		<input type="text" name="" id="first">
+		<select id="option">
+			<option>Select you choice</option>
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" name="" id="second">
+		<button onclick="cal()">=</button>
+		<input type="text" name="" readonly id="result">
+
+</body>
+<script type="text/javascript">
+
+	function cal()
+	{
+		var r=document.getElementById('first').value;
+		var p=document.getElementById('option').value;
+		var s=document.getElementById('second').value;
+		var a;
+
+		if(p =='+')
+		{
+			a = parseInt(r) + parseInt(s);
+		}
+		if(p == '-')
+		{
+			a= parseInt(r) - parseInt(s);
+		}
+		if(p == '*')
+		{
+			a= parseInt(r) * parseInt(s);
+		}
+		if (p =='/')
+		{
+			a=parseInt(r) / parseInt(s);
+		}
+		if(p == '%')
+		{
+			a= parseInt(r) % parseInt(s); 
+		}
+
+		document.getElementById('result').value=a;
+
+
+	}
+
+
+
+	
+</script>
+</html>
+
+
+
+
+

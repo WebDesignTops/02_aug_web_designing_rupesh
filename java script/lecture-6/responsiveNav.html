@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Navbar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		header{
+			width: 100%;
+			height: 120px;
+
+		}
+		.logo {
+			width: 15%;
+			height: inherit;
+			float: left;
+		}
+		.logo img{
+			width: 100%;
+			height: 100%;
+		}
+		nav {
+			width: 84%;
+/*			float: right;*/
+		}
+		nav ul li
+		{
+			display: inline-block;
+			font-size: 40px;
+			padding: 10px;
+		}
+		#close, #open{
+			display: none;
+		}
+		@media(max-width:480px)
+		{
+			#open{
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 50px;
+			}
+			#close{
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 80px;
+			}
+			nav {
+				position: absolute;
+				top: 120px;
+				left: -481px;
+/*				border: 1px solid black;*/
+				width: 100%;
+				height: auto;
+				text-align: center;
+				transition: 5s;
+				
+			}
+			nav ul li{
+
+					font-size: 20px;
+					display: block;
+
+					
+
+			}
+		}
+	</style>
+</head>
+<body>
+		<header>
+			<div class="logo">
+				<img src="logo2.jpg">
+			</div>
+				 <i class="fa fa-times" onclick="hide()" id="close"></i>     
+			<nav id="menu">
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Service</li>
+					<li>Product</li>
+					<li>Contact us</li>
+				</ul>
+			</nav>
+			<i class="fa fa-bars" onclick="show()" id="open"></i>
+		</header>
+
+</body>
+<script type="text/javascript">
+	function show(){
+		document.getElementById('menu').style.left="0px";
+	}
+	function hide()
+	{
+		document.getElementById('menu').style.left="-475px";
+	}
+</script>
+</html>
