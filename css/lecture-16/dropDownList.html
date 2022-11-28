@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drop-Down-list</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		nav ul{
+			list-style: none;
+			cursor: pointer;
+		}
+		nav ul li{
+			float: left;
+/*			padding: 5px;*/
+			border: 1px solid black;
+			font-size: 30px;
+			width: 180px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			background: red;
+		}
+		nav ul li ul li{
+			background: lime;
+		}
+		nav ul li ul{
+			display: none;
+		}
+		nav ul li:hover ul{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+
+
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>Courses
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+					<li>JQ</li>
+					<li>BOOTSTRAP</li>
+				</ul>
+			</li>
+			<li>Fees</li>
+			<li>Contact us</li>
+		</ul>
+	</nav>
+
+
+
+</body>
+</html>

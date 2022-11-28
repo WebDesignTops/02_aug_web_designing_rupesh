@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Footer</title>
+	<style type="text/css">
+		footer{
+			display: flex;
+			background: red;
+			justify-content: space-between;
+		}
+		.details{
+			width: 31%;
+			text-align: center;
+			border: 1px solid black;
+		}
+
+		.link{
+			width: 31%;
+			text-align: center;
+			border: 1px solid black;
+		}
+		.link a{
+			margin-top: 20px;
+			display: block;
+		}
+		.link a i{
+			color: white;
+		}
+		.add{
+			width: 31%;
+			border: 1px solid black;
+			text-align: center;
+		}
+		.text{
+			background: black;
+			font-size: 20px;
+			color: white;
+			text-align: center;
+			padding: 10px;
+		}
+		@media(max-width: 480px)
+		{
+			footer{
+				flex-direction: column;
+			}
+			.details, .link, .add{
+					width: 100%;
+					padding-bottom: 5px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+
+	<footer>
+		<div class="details">
+				<h4>Tops Technology</h4>
+				<p>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</div>
+		<div class="link">
+			<a href=""><i class="fa fa-home"> Home</i></a>
+			<a href=""><i class="fa fa-phone"> Contact</i></a>
+			<a href=""><i class="fa fa-envelope"> Emails</i></a>
+		</div>
+		<div class="add">
+			<h4>Tops Technology</h4>
+			<address>
+				Jalaram Plot-2<br>
+				Above SBI Bank<br>
+				Near Indira Circle<br>
+				university road<br>
+				Rajkot
+			</address>
+		</div>
+	</footer>
+<div class="text">
+	All Copyrights &copy Received and rigestered &reg
+</div>
+</body>
+</html>

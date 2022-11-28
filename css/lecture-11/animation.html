@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			animation-name: test;
+			animation-duration: 5s;
+			animation-direction: normal;
+			animation-iteration-count: 2;
+		}
+		@keyframes test{
+			0%{
+				top: 0px;
+				left: 0px;
+				background: red;
+			}
+			25%{
+				top: 0px;
+				left: 200px;
+				background: yellowgreen;
+			}
+			50%{
+				top: 200px;
+				left: 200px;
+				background: blue;
+			}
+			75%{
+				left: 0px;
+				top: 200px;
+				background: green;
+			}
+			100%{
+				top: 0px;
+				left: 0px;
+				background: yellow;
+			}
+		}
+		h1{
+
+			animation-name: txt;
+			animation-duration: 5s;
+			animation-iteration-count: 5;
+		}
+		@keyframes txt{
+			0%{
+				color: red;
+			}
+			25%
+			{
+				color: blue;
+			}
+			50%{
+				color: yellow;
+			}
+			75%{
+				color: green;
+			}
+			100%{
+				color: coral;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+	<h1>This is animation</h1>
+
+
+</body>
+</html>
